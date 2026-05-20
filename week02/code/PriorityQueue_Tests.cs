@@ -11,8 +11,14 @@ public class PriorityQueueTests
     // Defect(s) Found: 
     public void TestPriorityQueue_1()
     {
-        var priorityQueue = new PriorityQueue();
-        Assert.Fail("Implement the test case and then remove this.");
+        var queue = new PriorityQueue();
+        queue.Enqueue("A", 1);
+        queue.Enqueue("B", 3);
+        queue.Enqueue("C", 2);
+
+        Assert.AreEqual("B", queue.Dequeue());
+        Assert.AreEqual("C", queue.Dequeue());
+        Assert.AreEqual("A", queue.Dequeue());
     }
 
     [TestMethod]
@@ -21,8 +27,14 @@ public class PriorityQueueTests
     // Defect(s) Found: 
     public void TestPriorityQueue_2()
     {
-        var priorityQueue = new PriorityQueue();
-        Assert.Fail("Implement the test case and then remove this.");
+        var queue = new PriorityQueue();
+        queue.Enqueue("Bob", 1);
+        queue.Enqueue("Saleh", 3);
+        queue.Enqueue("sue", 2);
+
+        Assert.AreEqual("Saleh", queue.Dequeue());
+        Assert.AreEqual("sue", queue.Dequeue());
+        Assert.AreEqual("Bob", queue.Dequeue());
     }
 
     // Add more test cases as needed below.
