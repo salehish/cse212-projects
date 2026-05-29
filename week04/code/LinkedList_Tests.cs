@@ -154,6 +154,7 @@ public class RemoveTests
 }
 
 [TestClass]
+
 public class ReplaceTests
 {
     [TestMethod]
